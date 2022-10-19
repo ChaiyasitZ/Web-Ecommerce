@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">   
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, intial-scale=1">
     <title>M&M Store</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
 </head>
+
 <body>
     <div class="header">
     <div class="container">
@@ -19,16 +22,17 @@
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Products
-                        <i class="fa fa-angle-down"></i></a>
-                        <ul class="ht-dropdown dropdown-style-two">
-                            <li><a href="#" id="vegatables">Vegetable Products</a></li>
-                            <li><a href="mutton-keema.html">Mutton Keema</a></li>
-                            <li><a href="mutton-chaap-nalli.html">Mutton Chaap Nalli</a></li>
-                            <li><a href="mutton-liver.html">Mutton Liver</a></li>
-                            <li><a href="chicken-fresh.html">Chicken Fresh</a></li>
-                        </ul>
+                    <div class="dropdown">
+                    <li><a href="">Products</a>
+                        <div class="dropdown-content">
+                        <p><a href="#veg">Vegetable Products</a></p>
+                        <br>
+                        <p><a href="#mea">Meat&Beef Products</a></p>
+                        <br>
+                        <p><a href="#sea">Seafood Products</a></p>
+                        </div> 
                     </li>
+                    </div>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Account</a></li>
                 </ul>
@@ -54,681 +58,272 @@
 
 <!---Vegetables--->
     <div class="small-container"><br>
-        <h2 class="title" id="vegatables">Vegetable Products</h2>
+        <h2 id="veg" class="title">Vegetable Products</h2>
         <div class="row">
             <div class="col-4">
                 <img src="../image/tomato.png" alt="tomato">
                 <h4>Tomato</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
    
             <div class="col-4">
                 <img src="../image/carrot.png" alt="carrot">
                 <h4>Carrot</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/basil.png" alt="basil">
                 <h4>Basil</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/lemon.png" alt="lemon">
                 <h4>Lemon</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/garlic.png" alt="garlic">
                 <h4>Garlic</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/potato.png" alt="potato">
                 <h4>Potato</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/onion.png" alt="onion">
                 <h4>Red oninon</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/chili.png" alt="chili">
                 <h4>Chili</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/scallion.png" alt="scallion">
                 <h4>Scallion</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/cucumber.png" alt="cucumber">
                 <h4>Cucumber</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/bean_sprout.png" alt="bean sprout">
                 <h4>Bean sprout</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/long_bean.png" alt="long bean">
                 <h4>Long bean</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>50.00฿</p>
-                </div>
+                <br>
+                <p>50.00฿</p>
             </div>
         </div>
     </div>
+
 <!---Meat--->>
     <div class="small-container"><br>
-        <h2 class="title">Meat&Beef Products</h2>
+        <h2 id="mea" class="title">Meat&Beef Products</h2>
         <div class="row">
             <div class="col-4">
                 <img src="../image/diced_beef.png" alt="diced beef">
                 <h4>Diced beef</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/beef.png" alt="beef">
                 <h4>Beef</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/pork_chop.png" alt="pork chob">
                 <h4>Pork chob</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/pork.png" alt="pork">
                 <h4>Pork</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/pork_belly.png" alt="pork belly">
                 <h4>Pork belly</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/tomahawk.png" alt="tomahwak">
                 <h4>Tomahawk</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/lamb_neck.png" alt="lamb neck">
                 <h4>Lamb neck</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
 
             <div class="col-4">
                 <img src="../image/lamb_chop.png" alt="lamb chop">
                 <h4>Lamb chop</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/diced_mutton.png" alt="diced mutton">
                 <h4>Diced mutton</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/chicken_breast.png" alt="chicken breast">
                 <h4>Chicken breast</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
+
             <div class="col-4">
                 <img src="../image/chicken_wings.png" alt="chicken wings">
                 <h4>Chicken wings</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
             
             <div class="col-4">
                 <img src="../image/chicken_legs.png" alt="chicken legs">
                 <h4>Chicken legs</h4>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                    <br>
-                    <p>20.00฿</p>
-                </div>
+                <br>
+                <p>20.00฿</p>
             </div>
         </div>
     </div>
+
 <!---Seafood--->>
 <div class="small-container"><br>
-    <h2 class="title">Seafood Products</h2>
+    <h2 id="sea" class="title">Seafood Products</h2>
     <div class="row">
-        <div class="col-4">
-            <img src="../image/chilean_mussel.png" alt="chilean mussel">
-            <h4>Chilean mussel</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+            <div class="col-4">
+                <img src="../image/chilean_mussel.png" alt="chilean mussel">
+                <h4>Chilean mussel</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/newzealand_mussel.png" alt="newzealand mussel">
-            <h4>Newzealand mussel</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/newzealand_mussel.png" alt="newzealand mussel">
+                <h4>Newzealand mussel</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/hotate.png" alt="hotate">
-            <h4>Hotate</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/hotate.png" alt="hotate">
+                <h4>Hotate</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/horse_crab.png" alt="horse crab">
-            <h4>Horse crab</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/horse_crab.png" alt="horse crab">
+                <h4>Horse crab</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/white_seabass.png" alt="whit seabass fillet">
-            <h4>White seabass fillet</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/white_seabass.png" alt="whit seabass fillet">
+                <h4>White seabass fillet</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/salmon.png" alt="salmon fillet">
-            <h4>Salmon fillet</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/salmon.png" alt="salmon fillet">
+                <h4>Salmon fillet</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/splendid_squid.png" alt="splendid squid">
-            <h4>Splendid squid</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/splendid_squid.png" alt="splendid squid">
+                <h4>Splendid squid</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/river_prawns.png" alt="river prawns">
-            <h4>River prawns</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/river_prawns.png" alt="river prawns">
+                <h4>River prawns</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/lobster.png" alt="lobster">
-            <h4>Lobster</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/lobster.png" alt="lobster">
+                <h4>Lobster</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/abalone.png" alt="abalone">
-            <h4>Abalone</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/abalone.png" alt="abalone">
+                <h4>Abalone</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/sardine.png" alt="sardine">
-            <h4>Sardine</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/sardine.png" alt="sardine">
+                <h4>Sardine</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="../image/oyster.png" alt="oyster">
-            <h4>Oyster</h4>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
+
+            <div class="col-4">
+                <img src="../image/oyster.png" alt="oyster">
+                <h4>Oyster</h4>
                 <br>
                 <p>20.00฿</p>
             </div>
-        </div>
+        </div>    
     </div>
 </div>
 

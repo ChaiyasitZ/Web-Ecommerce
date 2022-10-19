@@ -198,3 +198,30 @@ li:hover {
     height: 600px;
     background-color: yellow;
   }
+
+  .stage-left {
+    left: -480px;
+  }
+  
+  .stage-right {
+    left: 480px;
+  }
+  
+  .stage-center {
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-device-width: 480px) and (orientation:landscape) {
+    .stage-left {
+      left: -480px;
+    }
+  
+    .stage-right {
+      left: 480px;
+    }
+  
+    .page {
+      width: 480px;
+    }
+  }
